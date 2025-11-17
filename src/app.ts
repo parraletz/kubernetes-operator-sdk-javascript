@@ -1,4 +1,4 @@
-function logger(value) {
+function logger(value: any) {
   console.log('Hola')
   console.log(value)
 }

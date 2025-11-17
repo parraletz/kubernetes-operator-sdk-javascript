@@ -16,7 +16,7 @@
   "postCreateCommand": "sh .devcontainer/prep_env.sh",
   "remoteUser": "node",
   "customizations": {
-    "windsurf": {
+    "vscode": {
       "extensions": [
         "esbenp.prettier-vscode",
         "rvest.vs-code-prettier-eslint",
