@@ -10,7 +10,8 @@
   "mounts": [
     "source=${localEnv:HOME}/.podman-sync,target=/home/node/dotfiles,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.aws,target=/home/node/.aws,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.aws,target=/home/node/.aws,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.kube,target=/home/node/.kube,type=bind,consistency=cached"
   ],
   "remoteUser": "node",
   "customizations": {
