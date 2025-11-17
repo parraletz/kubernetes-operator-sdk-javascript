@@ -1,19 +1,17 @@
 {
-  "name": "Kubernetes Javascript Operator SDK",
   "workspaceFolder": "/workspace",
   "dockerFile": "Dockerfile",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/aws-cli:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
   },
   "mounts": [
     "source=${localEnv:HOME}/.podman-sync,target=/home/node/dotfiles,type=bind,consistency=cached",
     "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.aws,target=/home/node/.aws,type=bind,consistency=cached",
-    "source=${localEnv:HOME}/.gnupg-devpod,target=/home/node/.gnupg,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.aws,target=/home/node/.aws,type=bind,consistency=cached"
   ],
-  "postCreateCommand": "sh .devcontainer/prep_env.sh",
   "remoteUser": "node",
   "customizations": {
     "vscode": {

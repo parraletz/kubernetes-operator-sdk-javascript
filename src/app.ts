@@ -1,7 +1,3 @@
-function logger(value: any) {
-  console.log('Hola')
-  console.log(value)
-}
+import { createK8sClient } from './client'
 
-@logger
-class Persona {}
+createK8sClient()
